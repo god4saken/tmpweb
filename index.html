@@ -15,7 +15,7 @@
   <!-- Performance: Preconnect Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="/css/style.css">
 </head>
@@ -26,20 +26,19 @@
       <nav aria-label="Main navigation">
         <a href="#focus">Our Focus</a>
         <a href="#story">Our Story</a>
-        <a href="#about">About Us</a>
         <a href="#portfolio">Our Portfolio</a>
-        <a href="#contact">Contact</a>
-        <button class="nav-toggle" aria-label="Abrir menú">☰</button>
+        <a href="#about">About Us</a>
       </nav>
     </div>
   </header>
-
   <main role="main">
-    <!-- Hero Section -->
     <section class="hero" aria-label="Hero: Driving the Future of Economic Innovation">
       <div class="container hero-grid">
         <div class="hero-text">
-          <h2>Driving the Future of Economic Innovation</h2>
+          <h2 class="line1">Driving the</h2>
+          <h2 class="line2">Future of</h2>
+          <h2 class="line3">Economic</h2>
+          <h2 class="line4">Innovation</h2>
           <p>Stage-agnostic investments spans protocols, scaling financial solutions, DeFi, and web3 infrastructure.</p>
           <button>Contact us</button>
         </div>
@@ -49,7 +48,6 @@
       </div>
     </section>
 
-    <!-- Focus Section -->
     <section id="focus" class="section" aria-labelledby="focus-title">
       <div class="container">
         <h2 id="focus-title">OUR FOCUS</h2>
@@ -59,39 +57,35 @@
       </div>
     </section>
 
-    <!-- Story Section -->
     <section id="story" class="section" aria-labelledby="story-title">
       <div class="container">
         <h2 id="story-title">Our Story</h2>
-        <p>Our story began with a vision to revolutionize how startups receive both capital and strategic guidance.</p>
-        <p>From early-stage support to large-scale scaling, we have partnered with innovators across fintech, healthcare, and web3 industries.</p>
-      </div>
-    </section>
-
-    <!-- About Us Section -->
-    <section id="about" class="section" aria-labelledby="about-title">
-      <div class="container">
-        <h2 id="about-title">About Us</h2>
         <p>We are a forward-thinking investment firm focused on identifying and supporting visionary entrepreneurs with the potential to transform industries and redefine markets.</p>
         <p>With a strategic approach and a long-term vision, we work closely with early-stage companies, providing not only capital but also a comprehensive suite of resources, expert guidance, and access to a global network that accelerates growth and expansion.</p>
-        <p>Our mission is to be a key partner in the entrepreneurial journey, offering more than just funding: we provide strategic direction, operational support, and a deep understanding of the challenges and opportunities startups face.</p>
+        <p>Through a combination of experience, insight, and a highly collaborative approach, we are committed to being a catalyst for success, transforming innovative ideas into global companies that make a meaningful impact on the world.</p>
       </div>
     </section>
 
-    <!-- Portfolio Section -->
     <section id="portfolio" class="section" aria-labelledby="portfolio-title">
       <div class="container">
         <h2 id="portfolio-title">Our Portfolio</h2>
         <ul class="portfolio-list">
-          <li>B2fintech</li>
-          <li>B2pay</li>
-          <li>B2payx</li>
-          <li>B2payfx</li>
+          <li><img src="/assets/b2fintech.png" alt="B2fintech logo"><span>B2fintech</span></li>
+          <li><img src="/assets/b2pay.png" alt="B2pay logo"><span>B2pay</span></li>
+          <li><img src="/assets/b2payx.png" alt="B2payx logo"><span>B2payx</span></li>
+          <li><img src="/assets/b2payfx.png" alt="B2payfx logo"><span>B2payfx</span></li>
         </ul>
       </div>
     </section>
 
-    <!-- Expertise Section -->
+    <section id="about" class="section" aria-labelledby="about-title">
+      <div class="container">
+        <h2 id="about-title">About Us</h2>
+        <p>We are a forward-thinking investment firm focused on identifying and supporting visionary entrepreneurs with the potential to transform industries and redefine markets. With a strategic approach and a long-term vision, we work closely with early-stage companies, providing not only capital but also a comprehensive suite of resources, expert guidance, and access to a global network that accelerates growth and expansion.</p>
+        <p>Our mission is to be a key partner in the entrepreneurial journey, offering more than just funding: we provide strategic direction, operational support, and a deep understanding of the challenges and opportunities startups face. We specialize in partnering with disruptive companies that seek to change the game in technology, healthcare, fintech, and beyond, helping them reach their full potential and position themselves as leaders in their respective industries.</p>
+      </div>
+    </section>
+
     <section id="expertise" class="section" aria-labelledby="expertise-title">
       <div class="container">
         <h2 id="expertise-title">Expertos en desarrollo</h2>
@@ -99,13 +93,12 @@
       </div>
     </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section form" aria-labelledby="contact-title">
+    <section id="contact" class="section" aria-labelledby="contact-title">
       <div class="container form-container">
         <h2 id="contact-title">Contact</h2>
         <form aria-label="Contact Form">
           <fieldset>
-            <legend>Contáctanos</legend>
+            <legend class="sr-only">Contáctanos</legend>
             <div class="form-group">
               <label for="firstName">Name*</label>
               <input type="text" id="firstName" name="firstName" required aria-required="true">
@@ -130,27 +123,17 @@
               <label for="phone">+57 Phone number</label>
               <input type="tel" id="phone" name="phone" inputmode="tel">
             </div>
+            <button type="submit">Send</button>
           </fieldset>
-          <button type="submit">Send</button>
         </form>
       </div>
     </section>
   </main>
-
-  <!-- Footer -->
   <footer role="contentinfo" class="footer">
     <div class="container footer-container">
-      <nav aria-label="Footer navigation">
-        <a href="#focus">Our Focus</a>
-        <a href="#story">Our Story</a>
-        <a href="#about">About Us</a>
-        <a href="#portfolio">Our Portfolio</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <p>Info@groupb2.com | Business Entities | Privacy Policy © 2024 por B2group</p>
+      <p>Info@groupb2.com | Business Entities | Contact | Privacy Policy © 2024 por B2group</p>
     </div>
   </footer>
-
   <script src="/js/nav-active.js" defer></script>
 </body>
 </html>
